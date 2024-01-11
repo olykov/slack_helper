@@ -1,0 +1,8 @@
+version: "3"
+services:
+  slack_helper:
+    container_name: slack_helper
+    image: lexusobm/slack_helper:1
+    restart: always
+    env_file:
+      - .env-prod
